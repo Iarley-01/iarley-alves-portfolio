@@ -28,7 +28,8 @@ body {
 
 .cabecalho__menu {
   display: flex;
-  gap: 80px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .cabecalho__menu__links {
@@ -120,6 +121,15 @@ body {
   font-family: var(--fonte-principal);
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.lista__projetos {
+  display: flex;
+  align-items: flex-start;
+}
+
+.lista__projetos li a:hover {
+  border-bottom: 2px solid var(--cor-secundaria);
 }
 
 @media (max-width: 1200px) {
